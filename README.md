@@ -1,32 +1,35 @@
-# Glyphbound: Neon Wilds
+# Glyphbound: Neon Wilds — v2 Overhaul
 
-A fully client-side Progressive Web App made to be uploaded to GitHub Pages and installed on an iPhone without Xcode or a Mac.
+This is a full replacement for the original prototype.
 
-## What is in this build
+## Major changes
 
-- Original retro monster-catching setting
-- 15 monster species/forms
-- 3 starter monsters
-- Branching starter evolution based on battle style
-- 4 explorable zones
-- Wild encounters and capture mechanics
-- Warden boss battles
-- 18 technique cards
-- 10-card deck builder
+- Real walkable top-down overworld
+- Five connected maps: Relay Town, Circuit Meadow, Rustwater Docks, Nightglass Arcade, Crown Relay
+- On-screen iPhone D-pad and interaction controls
+- Wild encounter terrain
+- NPCs, healing terminals, shops, hidden/field caches
+- 12 trainer/Warden encounters with multi-monster teams
+- Persistent monster HP between battles
+- Team switching during combat
+- Fixed level curves rather than scaling everything to the player
+- Badge gates between regions
+- Harder capture rules
+- 21 authored monster forms with individually drawn 32×32 pixel sprites
+- Branching starter evolution based on actual battle behavior
+- 20 technique cards
+- 16-card deck building
 - Type strengths/resistances
-- XP, levels, bond, evolution and party management
-- Creature codex
-- Local save data
-- Offline-capable PWA
-- Home Screen installation
+- XP, levels, Bond, capture, evolution, codex and campaign completion
 
-## Upload to GitHub
+## Updating the existing GitHub repository
 
-Upload these files to the root of a repository:
+Delete or overwrite the previous game files, then upload these files to the repository root:
 
 - index.html
 - style.css
 - data.js
+- maps.js
 - game.js
 - manifest.webmanifest
 - sw.js
@@ -34,21 +37,10 @@ Upload these files to the root of a repository:
 - icon-512.png
 - README.md
 
-Then enable GitHub Pages:
+GitHub Pages settings do not need to change.
 
-Settings → Pages → Deploy from a branch → main → /(root)
+Because this is a major rebuild, v2 uses a new save key and starts a new campaign. The old v1 browser save is left untouched.
 
-Open the GitHub Pages URL in Safari and choose Share → Add to Home Screen.
+## iPhone
 
-## Gameplay
-
-1. Pick a starter.
-2. Explore Circuit Meadow.
-3. Win three wild battles to unlock the zone's Warden.
-4. Weaken wild monsters to 45% HP or below to attempt a Bind.
-5. Customize a 10-card technique deck.
-6. Level monsters and raise Bond.
-7. Evolve monsters beginning at level 5.
-8. Beat all four Wardens and clear Crown Relay.
-
-All save data is stored locally on the device in the browser/PWA storage.
+Once GitHub Pages deploys the update, the installed Home Screen PWA should refresh itself. If iOS holds the old cache unusually long, closing and reopening the app while online normally resolves it.

@@ -3,9 +3,10 @@
   "short_name": "Glyphbound",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#101018",
-  "theme_color": "#101018",
-  "description": "A retro monster-catching deck battler with branching evolution.",
+  "orientation": "portrait",
+  "background_color": "#090b12",
+  "theme_color": "#090b12",
+  "description": "A retro monster-catching RPG with a walkable overworld, branching evolution, and deck-driven battles.",
   "icons": [
     {
       "src": "icon-180.png",
